@@ -1,0 +1,19 @@
+{
+  "name": "classical_pattern_in_oop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rain84/Classical_Pattern_in_OOP.git"
+  },
+  "author": "rain84",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rain84/Classical_Pattern_in_OOP/issues"
+  },
+  "homepage": "https://github.com/rain84/Classical_Pattern_in_OOP#readme"
+}
