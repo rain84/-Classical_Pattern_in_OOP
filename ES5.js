@@ -10,9 +10,7 @@
 
     const A = (function () {
         function A (p1) {
-            if (p1 !== undefined) {
-                this.p1 = p1;
-            }
+            if (p1 !== undefined) this.p1 = p1;
         }
 
         A.prototype.p1 = 2;
@@ -53,9 +51,7 @@
             _super.apply(this, arguments);
         }
 
-        const A = _super._super._super;
-
-        D.prototype.p4 = 7 * A.prototype.p1;
+        D.prototype.p4 = 7 * D.prototype.p1;
         D.prototype.f2 = function (x) {return 5 * _super.prototype.f2(x);};
         D.prototype.f4 = function (x) {return this.f1(x) + this.f2(x)};
 

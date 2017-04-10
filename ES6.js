@@ -5,7 +5,7 @@ class A {
 
     get p1 () {return this._p1 || 2;}
 
-    set p1 (val) { val !== undefined && (this._p1 = val); }
+    set p1 (val) { if (val !== undefined) this._p1 = val; }
 
     //noinspection JSMethodCanBeStatic
     f1 () {return 7;}
@@ -38,7 +38,7 @@ class D extends B {
         super(...args);
     }
 
-    get p4 () {return 7 * super.super.super.p1;}
+    get p4 () { return 7 * super.p1; }
 
     set p4 (val) {}
 
